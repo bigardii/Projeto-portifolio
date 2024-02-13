@@ -381,3 +381,46 @@ section.projetos{
     background-color: #0056b2;
     
 }
+
+@media screen and (max-width: 1020px) {
+	.flex{
+		flex-direction: column;
+	}
+
+	.topo-do-site .flex{
+		flex-direction: column-reverse;
+	}
+
+	.menu-desktop, .btn-contato{
+		display: none;
+	}
+
+	section.especialidades .flex{
+		gap: 20px;
+	}
+
+	#img-joao{
+		margin: 0;
+	}
+
+	.projetos .meus-projetos {
+		display:inline;	
+	}
+
+	.meus-projetos p{
+		color: white;
+		font-size: 25px;
+		font-weight: 400;
+		line-height: 35px;
+	}
+	
+	.meus-projetos p span{
+		color: #1E90D0 ;
+		font-size: 45px;
+		line-height: 50px;
+	}
+	
+	.img-construcao{
+		margin-top: 50px;
+	}
+}
