@@ -1,0 +1,383 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+	background-color: #000;
+	height: 100vh;
+
+}
+
+.flex{
+	display: flex;
+}
+
+#logo{
+	width: 150px;
+	height: 130px;
+	margin-left: 0;
+}
+
+.interface{
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+/* Cabeçalho */
+header{
+	padding: 40 4%;
+}
+
+header a {
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	font-size : 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color : #1E90D0;
+	display: inline-block;
+	transition: .2s;
+}
+
+header .menu-desktop ul li a:hover {
+	color: white;
+	transform: scale(1.05);
+}
+
+header .interface{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+header nav ul {
+	list-style-type: none;
+}
+
+header nav ul li{
+	display: inline-block;
+	padding: 0 40px;
+}
+
+header .btn-contato button{
+	padding: 10px 40px;
+	border-radius : 10em;
+	background-color : #1E90D0;
+	font-family: 'Montserrat', sans-serif;
+	font-size : 15px;
+	text-transform: uppercase;
+	font-weight : bold;
+	border : 0;
+	cursor: pointer;
+	transition: .2s;
+	
+}
+
+header .btn-contato button:hover {
+	box-shadow: 0px 0px 13px #5e98e6;
+	transform: scale(1.05);
+	
+}
+
+/* Estilo do topo */
+
+section.topo-do-site {
+	padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+	align-items: center;
+	justify-content: center;
+	gap: 90px;
+
+}
+
+.topo-do-site .txt-topo-site h1{
+	color: white;
+	font-size: 30px;
+	margin-top: 20px;
+
+}
+
+.topo-do-site .txt-topo-site h1 #SPAN1{
+	color: #1E90D0; 
+	font-size: 55px;
+	line-height: 100px;
+}
+
+.topo-do-site .txt-topo-site h1 #SPAN2{
+	color: #1E90D0; 
+	/*font-size: 50px;*/
+}
+
+.topo-do-site .txt-topo-site p{
+	color: white;
+	font-size: 15px;
+	line-height: 19px;
+	margin: 40px 0;
+
+}
+
+section .btn-contato button{
+	padding: 10px 40px;
+	border-radius : 10em;
+	background-color : #1E90D0;
+	font-family: 'Montserrat', sans-serif;
+	font-size : 15px;
+	text-transform: uppercase;
+	font-weight : bold;
+	border : 0;
+	cursor: pointer;
+	transition: .2s;
+}
+
+section .btn-contato button:hover {
+	box-shadow: 0px 0px 13px #5e98e6;
+	transform: scale(1.05);
+	
+}
+
+#img-joao{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 20px 12px #1E90D0;
+	margin-left: 130px;
+	margin-top: 60px;
+
+}
+
+.topo-do-site .img-topo-site img{
+	position: relative;
+	animation: flutuar-img 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar-img {
+	0%{
+		top: 0;
+	}
+	100% {
+		top: 30px;
+	}
+}
+
+/* estilo minhas especialidades */
+
+section.especialidades{
+	padding: 40px 4%;
+	margin-top: 40px;
+}
+
+section.especialidades .flex{
+	gap: 100px;
+}
+
+h2.titulo {
+	text-align: center;
+	font-size: 28px;
+	color: white;
+}
+
+h2.titulo span{
+	color: #1E90D0;
+}
+
+.especialidades .especialidades-box{
+	color: white;
+	padding: 40px;
+	text-align: center;
+	margin-top: 60px;
+	border-radius: 2em;
+	transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+	transform: scale(1.05);
+	box-shadow: 0 0 10px skyblue;
+}
+
+.especialidades .especialidades-box i{
+	color: #1E90D0;
+	font-size: 60px;
+}
+
+.especialidades .especialidades-box h3{
+	font-size: 25px;
+	margin: 20px 0;
+}
+
+/* estilo sobre */
+
+section.sobre {
+	padding: 80px 4%;
+}
+
+#img-sobre{
+	width: 330px;
+	height: 400px;
+	border-radius: 10px;
+}
+
+.sobre .txt-sobre{
+	margin: 30px;
+	color: white;
+}
+
+.sobre .txt-sobre h2{
+
+	font-size: 35px;
+	margin: 0 0 40px;
+}
+
+.sobre .txt-sobre h2 span{
+	color: #1E90D0;
+}
+
+.sobre .txt-sobre p{
+	margin: 20px 0;
+	text-align: justify;
+}
+
+.btn-social button{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #1E90D0;
+	border: none;
+	font-size: 25px;
+	cursor: pointer;
+	margin-right: 10px;
+	transition: .2s;
+}
+
+.btn-social button:hover{
+	transform: scale(1.05);
+	box-shadow: 0 0 5px skyblue;
+}
+
+/* Estilo do Contato */
+
+section.formulario{
+	padding: 50px 4%;
+	margin-bottom: 60px;
+}
+
+form{
+	max-width: 420px;
+	margin: 0 auto;
+	margin-top: 50px;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+form input, form textarea{
+	width: 100%;
+	background-color: #242424;
+	border: 0;
+	color: white;
+	outline: 0;
+	padding: 15px 10px;
+	border-radius: 10px;
+	font-size: 16px;
+}
+
+form textarea{
+	resize: none;
+	height: 160px;
+}
+
+form .btn-enviar{
+	margin-top: 20px;
+	text-align: center;
+}
+
+form .btn-enviar input{
+	width: 100px;
+	background-color: #1E90D0 ;
+	color: black;
+	cursor: pointer;
+	font-weight: bold;
+	transition: .2s;
+	text-transform: uppercase;
+}
+
+form .btn-enviar input:hover{
+	transform: scale(1.05);
+	box-shadow: 0 0 5px skyblue;
+}
+
+/* Estilo do rodapé */
+
+footer {
+	background: url("imagens/bg.jpg");
+	padding: 26px 4%;
+	box-shadow: 0px 7px 30px skyblue;
+}
+
+footer .flex{
+	justify-content:space-between ;
+}
+
+footer .logo-footer{
+	font-size: 20px;
+	font-weight: 250;
+	color: white;
+	text-align: center;
+	margin-top: 13px;
+}
+
+/* Estilo do projetos */
+
+section.projetos{
+	padding: 60px 4%;
+}
+
+.projetos .meus-projetos {
+	display: flex;
+	justify-content: space-between ;
+}
+
+.meus-projetos p{
+	color: white;
+	font-size: 25px;
+	font-weight: 400;
+	margin-left: 30px;
+	line-height: 50px;
+}
+
+.meus-projetos p span{
+	color: #1E90D0 ;
+	font-size: 45px;
+}
+.img-construcao{
+	margin-right: 50px;
+}
+
+/*Estilo do botao volta-topo-btn*/
+
+#volta-topo-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1E90D0;
+    color: black;
+    font-size: 22px;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#volta-topo-btn:hover {
+    background-color: #0056b2;
+    
+}
