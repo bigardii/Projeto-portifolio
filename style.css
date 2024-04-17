@@ -196,9 +196,17 @@ h2.titulo span{
 	transition: .2s;
 }
 
-.especialidades .especialidades-box:hover{
+.especialidades #box1:hover{
 	transform: scale(1.05);
-	box-shadow: 0 0 10px skyblue;
+	box-shadow: 0 0 15px #c6c62a;
+}
+.especialidades #box2:hover{
+	transform: scale(1.05);
+	box-shadow: 0 0 15px #d8daeb;
+}
+.especialidades #box3:hover{
+	transform: scale(1.05);
+	box-shadow: 0 0 15px #eb7d46;
 }
 
 .especialidades .especialidades-box i{
