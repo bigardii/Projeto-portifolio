@@ -21,6 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     // Se os dados não foram enviados via POST, redireciona para o formulário
-    header("Location: form.html");
+    header("Location: index.html");
 }
 ?>
