@@ -1,6 +1,5 @@
 <?php
-// Verifica se os dados foram enviados via POST
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     // Obtém os dados do formulário
     $nome = $_POST["nome"];
     $email = $_POST["email"];
@@ -9,18 +8,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Configurações de e-mail
     $destinatario = "joaovbp1234@hotmail.com";
     $assunto = "Formulário de Contato";
-    $corpo = "Nome: " . $nome . "\n";
-    $corpo .= "Email: " . $email . "\n";
-    $corpo .= "Mensagem: " . $mensagem;
+    $corpo = "Nome: " . $nome . "\n" ."Email: " . $email . "\n" . "Mensagem: " . $mensagem;
 
     // Envia o e-mail
-    if (mail($destinatario, $assunto, $corpo)) {
-        echo "E-mail enviado com sucesso!";
-    } else {
-        echo "Erro ao enviar o e-mail.";
+    $cabeca = "From: joaovbp1234@hotmail.com". "\n". "Reply-to: ".$email."\n". "X=Mailer:PHP/".phpversion();
+
+    if(mail($destinatario,$assunto,$corpo,$cabeca)){
+        echo("Email enviado com sucesso!");
+    }else{
+        echo("Houve um erro ao enviar o email!");
     }
-} else {
-    // Se os dados não foram enviados via POST, redireciona para o formulário
-    header("Location: index.html");
-}
+
 ?>
